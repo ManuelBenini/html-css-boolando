@@ -1,15 +1,71 @@
+/* GENERIC */
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  
-}
+/* UTILITIES */
 
 .clearfix::after{
   content: '';
   display: table;
   clear: both;
+}
+
+/* MAIN */
+
+.row{
+  width: 80%;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.product{
+ position: relative;
+ display: inline-block;
+ margin-right: 8px;
+}
+
+img{
+  width: 250px;
+}
+
+.tags{
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  font-size: 8px;
+  color: white;
+}
+
+.discount{
+  float: left;
+  background-color: #eb0037;
+  margin-right: 2px;
+  padding: 2px;
+}
+
+.dress-green{
+  float: left;
+  background-color: #00875a;
+  padding: 2px;
+}
+
+.row span.heart{
+  position: absolute;
+  right: 0;
+  top: 10px;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.product.one:hover{
+  background-image: url(../img/1b.webp);
+  background-size: cover;
+  background-position: center;
+  z-index: 100;
 }
