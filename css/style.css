@@ -8,7 +8,6 @@
 
 img{
   width: 100%;
-  max-width: 100%;
 }
 
 
@@ -38,16 +37,32 @@ img{
 
 /* IMAGES & IMG ACCESSORIES */
 
+.card{
+  width: calc(100% / 3 - 20px);
+  display: inline-block;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
 .image-box{
   position: relative;
-  display: inline-block;
-  width: 33%;
-  padding-right: 10px;
 }
+
+div.image-box img.hover-image{
+  display: none;
+}
+
+/* .card.left{
+  margin-right: 10px;
+} */
+
+/* .card.right{
+  margin-left: 10px;
+} */
 
 .tags{
   position: absolute;
-  bottom: 100px;
+  bottom: 20px;
   left: 0;
   font-size: 12px;
   color: white;
@@ -60,7 +75,6 @@ img{
 
 .discount{
   background-color: #eb0037;
-  margin-right: 4px;
 }
 
 .dress-green{
@@ -69,26 +83,21 @@ img{
 
 .heart{
   position: absolute;
-  right: 10px;
+  right: 0px;
   top: 15px;
   background-color: white;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  padding: 5px 10px;
+  font-size: 20px;
 }
 
 
 /* HOVER */
-
-div.image-box img.hover-image{
+div.image-box:hover img.first-image{
   display: none;
 }
 
 div.image-box:hover img.hover-image{
-  display: block;
-  position: absolute;
-  top: 0;
-  padding-right: 10px;
+  display: inline-block;
 }
 
 div.image-box:hover .heart{
@@ -97,17 +106,12 @@ div.image-box:hover .heart{
 
 /* MAIN TEXT */
 
-span.brand{
-  font-size: 0.8rem;
-}
-
-span.article-name{
-  font-size: 1rem;
-  font-weight: bold;
+section.text h3{
   text-transform: uppercase;
+  font-size: 16px;
 }
 
-.actual-cost, .full-cost{
+section.text span{
   font-size: 0.8rem;
 }
 
@@ -116,10 +120,6 @@ span.article-name{
   font-weight: bold;
 }
 
-.full-cost{
-  text-decoration: line-through;
-}
-
 section.text{
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
